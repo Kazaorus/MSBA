@@ -1,0 +1,146 @@
+{
+    "凭证": {
+        "post_delay": 2000,
+        "next": [
+            "每日任务",
+            "打开凭证"
+        ]
+    },
+    "每日任务": {
+        "recognition": "OCR",
+        "roi": [
+            711,
+            656,
+            296,
+            233
+        ],
+        "expected": "每日任务",
+        "action": "Click",
+        "next": [
+            "一键领取_每日",
+            "每周任务"
+        ]
+    },
+    "一键领取_每日": {
+        "post_delay": 1000,
+        "recognition": "OCR",
+        "roi": [
+            0,
+            585,
+            233,
+            135
+        ],
+        "expected": "键领取",
+        "action": "Click",
+        "next": [
+            "关闭奖励通知",
+            "每日任务"
+        ]
+    },
+    "每周任务": {
+        "recognition": "OCR",
+        "roi": [
+            922,
+            658,
+            290,
+            231
+        ],
+        "expected": "每周任务",
+        "action": "Click",
+        "next": [
+            "一键领取_每周",
+            "限定任务"
+        ]
+    },
+    "一键领取_每周": {
+        "post_delay": 1000,
+        "recognition": "OCR",
+        "roi": [
+            0,
+            585,
+            233,
+            135
+        ],
+        "expected": "键领取",
+        "action": "Click",
+        "next": [
+            "关闭奖励通知",
+            "每周任务"
+        ]
+    },
+    "限定任务": {
+        "recognition": "OCR",
+        "roi": [
+            1124,
+            659,
+            293,
+            231
+        ],
+        "expected": "限定任务",
+        "action": "Click",
+        "next": [
+            "一键领取_限定",
+            "凭证奖励"
+        ]
+    },
+    "一键领取_限定": {
+        "post_delay": 1000,
+        "recognition": "OCR",
+        "roi": [
+            0,
+            585,
+            233,
+            135
+        ],
+        "expected": "键领取",
+        "action": "Click",
+        "next": [
+            "关闭奖励通知",
+            "限定任务"
+        ]
+    },
+    "凭证奖励": {
+        "recognition": "OCR",
+        "roi": [
+            507,
+            654,
+            251,
+            237
+        ],
+        "expected": "奖励",
+        "action": "Click",
+        "next": [
+            "一键领取_凭证奖励",
+            "返回主菜单"
+        ]
+    },
+    "一键领取_凭证奖励": {
+        "post_delay": 1000,
+        "recognition": "OCR",
+        "roi": [
+            0,
+            585,
+            233,
+            135
+        ],
+        "expected": "键领取",
+        "action": "Click",
+        "next": [
+            "关闭奖励通知",
+            "凭证奖励"
+        ]
+    },
+    "打开凭证": {
+        "post_delay": 2000,
+        "is_sub": true,
+        "recognition": "OCR",
+        "roi": [
+            149,
+            326,
+            200,
+            120
+        ],
+        "expected": "息风凭证",
+        "action": "Click"
+    }
+}
